@@ -15,7 +15,7 @@ defmodule AppleAndTheMoon do
   The more force on an object, the more it accelerates. But the more massive it is, the more it resists acceleration. The formula of this is F = MA or A = F/M or M = F/A. The below function find the weight by acceleration and mass
   """
   def newtons_second_law(m, a) do
-    m * a
+    "#{m * a} Newtons"
   end
 
   @doc """
@@ -24,6 +24,6 @@ defmodule AppleAndTheMoon do
 
   def newtons_gravitation_law(object_one, object_two, g, r) do
     # r is distance between two objects.
-    g * object_one * object_two / :math.pow(r, 2) |> round()
+    "#{ g * object_one * object_two / :math.pow(r, 2) |> round()} Newtons"
   end
 end
